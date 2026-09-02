@@ -46,11 +46,6 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Notifications: sent via Telegram when a site goes down or comes back up
-notifications:
-  - type: telegram
-    bot-token: $TELEGRAM_BOT_TOKEN
-    chat-id: $TELEGRAM_CHAT_ID
-
-# Upptime also supports assigning issues, custom check intervals, and more
+# Notifications are NOT configured here — Upptime reads fixed-name repository secrets instead:
+#   NOTIFICATION_TELEGRAM=true, NOTIFICATION_TELEGRAM_BOT_KEY=<bot token>, NOTIFICATION_TELEGRAM_CHAT_ID=<chat id>
 # See https://upptime.js.org/docs/configuration
