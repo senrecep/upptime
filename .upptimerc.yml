@@ -1,31 +1,56 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
+owner: senrecep # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: API Health (dokunduur)
+    url: https://api.dokunduur.com/health
+  - name: App Dashboard (dokunduur)
+    url: https://app.dokunduur.com
+  - name: Dokunduur Landing
+    url: https://dokunduur.com
+  - name: Mailu (senrecep)
+    url: https://mailu.senrecep.com
+  - name: Melekkama
+    url: https://melekkama.com
+  - name: Kahveci Lounge Menu
+    url: https://dokunduur.com/en/kahveci-lounge
+  - name: Senrecep
+    url: https://senrecep.com
+  - name: Server (senrecep mailu)
+    url: https://server.senrecep.com
+  - name: Webmail (doganoguz)
+    url: https://webmail.doganoguz.com
+  - name: Webmail (dokunduur)
+    url: https://webmail.dokunduur.com
+  - name: Webmail (melekkama)
+    url: https://webmail.melekkama.com
+  - name: Webmail (senrecep)
+    url: https://webmail.senrecep.com
+  - name: Webmail (yusuftopkaya)
+    url: https://webmail.yusuftopkaya.com
+  - name: Wood Material Calculator
+    url: https://wood-material-calculator.senrecep.com
+  - name: Yusuftopkaya
+    url: https://yusuftopkaya.com
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # No custom domain — using the default GitHub Pages project URL instead
+  baseUrl: /upptime
+  name: senrecep Status
+  introTitle: "**Servis Durumu** — sunucularımın ve sitelerimin canlı durumu."
+  introMessage: Bu sayfa, [GitHub reposundan](https://github.com/senrecep/upptime) gelen **gerçek zamanlı** verileri kullanır. Sunucu bağımsız olarak GitHub Actions, Issues ve Pages üzerinde çalışır.
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
+# Notifications: sent via Telegram when a site goes down or comes back up
+notifications:
+  - type: telegram
+    bot-token: $TELEGRAM_BOT_TOKEN
+    chat-id: $TELEGRAM_CHAT_ID
+
+# Upptime also supports assigning issues, custom check intervals, and more
 # See https://upptime.js.org/docs/configuration
